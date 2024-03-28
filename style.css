@@ -97,7 +97,7 @@ header {
   text-align: center;
   line-height: 40px;
   cursor: pointer;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: transform 0.1s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 #return-to-top.visible {
@@ -109,12 +109,13 @@ header {
 }
 
 .slide-in-bottom {
-  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-bottom 0.1s linear both;
 }
 
 .slide-out-top {
-  animation: slide-out-top 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: slide-out-top 0.1s linear both;
 }
+
 
 @keyframes slide-in-bottom {
   from {
