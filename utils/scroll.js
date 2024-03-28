@@ -1,7 +1,8 @@
 const returnToTopButton = document.getElementById('return-to-top');
 
 document.addEventListener('scroll', function() {
-    if (window.scrollY > 200) { 
+    const halfWindow = window.innerHeight/2;
+    if (window.scrollY > halfWindow) { 
         returnToTopButton.classList.add('slide-in-bottom');
         returnToTopButton.classList.remove('slide-out-top');
         returnToTopButton.classList.add('visible');
